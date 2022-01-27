@@ -71,13 +71,17 @@
 
       &:hover {
         .hidden {
-          display: inline;
+          visibility: visible;
+          font-size: 1.5rem;
         }
       }
     }
 
     .hidden {
-      display: none;
+      visibility: hidden;
+      width: 2px;
+      font-size: 1px;
+      transition: 0.2s all
     }
 
     &:hover {
@@ -86,6 +90,7 @@
         border-right: 1px solid rgb(220, 220, 220);
         min-width: 20vw;
       }
+      
     }
 
     @media only screen and (max-width: 600px) {
@@ -95,7 +100,8 @@
 
           &.router-link-exact-active {
             .hidden {
-              display: inline;
+              visibility: visible;
+              font-size: 1.5rem;
             }
           }
         }
