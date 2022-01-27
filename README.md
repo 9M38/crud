@@ -1,4 +1,9 @@
-# crud
+# CRUD sample app
+
+```
+A simple single-page app that represent CRUD methods
+on API at https://jsonplaceholder.typicode.com/ 
+```
 
 ## Project setup
 ```
