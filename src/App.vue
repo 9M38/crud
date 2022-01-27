@@ -29,7 +29,6 @@
 </template>
 
 <style lang="scss">
-
   @import "./assets/style.scss";
 
   * {
@@ -93,19 +92,20 @@
         //min-width: 20vw;
         min-width: 200px;
       }
-      
     }
 
     @media only screen and (max-width: 600px) {
       & {
-        & a{
+        & a {
           min-width: 20vw;
         }
-        &:hover{
-          & a{
+
+        &:hover {
+          & a {
             min-width: 20vw;
           }
         }
+
         a {
           &.router-link-exact-active {
             .hidden {
