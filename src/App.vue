@@ -53,6 +53,8 @@
     display: flex;
     justify-content: center;
     height: 5rem;
+    max-width: 700px;
+    margin: 0 auto;
 
     a {
       font-weight: bold;
@@ -88,16 +90,23 @@
       & a {
         border-left: 1px solid rgb(220, 220, 220);
         border-right: 1px solid rgb(220, 220, 220);
-        min-width: 20vw;
+        //min-width: 20vw;
+        min-width: 200px;
       }
       
     }
 
     @media only screen and (max-width: 600px) {
       & {
-        a {
+        & a{
           min-width: 20vw;
-
+        }
+        &:hover{
+          & a{
+            min-width: 20vw;
+          }
+        }
+        a {
           &.router-link-exact-active {
             .hidden {
               visibility: visible;
