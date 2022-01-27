@@ -62,6 +62,7 @@
       transition: 0.5s all;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
+      min-width: 0;
 
       &.router-link-exact-active {
         color: $active-color;
